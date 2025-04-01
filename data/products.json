@@ -1,0 +1,86 @@
+{
+  "categories": {
+    "electronics": {
+      "displayName": "Electronics",
+      "products": [
+        {
+          "id": "iphone-14-pro",
+          "title": "iPhone 14 Pro",
+          "description": "Apple's latest flagship smartphone with A16 Bionic chip",
+          "price": 79999,
+          "originalPrice": 89999,
+          "image": "img/products/iphone-14-pro.jpg",
+          "badge": "Hot Deal",
+          "rating": 4.8,
+          "reviewCount": 1423,
+          "affiliateLink": "https://amzn.to/3byMei5",
+          "category": "electronics",
+          "subcategory": "smartphones",
+          "featured": true,
+          "meta": {
+            "brand": "Apple",
+            "storage": "128GB",
+            "camera": "48MP"
+          }
+        },
+        {
+          "id": "sony-wh-1000xm4",
+          "title": "Sony WH-1000XM4",
+          "description": "Industry-leading noise cancellation, 30-hour battery life",
+          "price": 24999,
+          "originalPrice": 29999,
+          "image": "img/products/sony-wh-1000xm4.jpg",
+          "badge": "Best Seller",
+          "rating": 4.7,
+          "reviewCount": 3245,
+          "affiliateLink": "https://amzn.to/3Q7fo0H",
+          "category": "electronics",
+          "subcategory": "audio",
+          "featured": true,
+          "meta": {
+            "battery": "30 hours",
+            "bluetooth": "Bluetooth 5.0",
+            "anc": "Active Noise Cancellation"
+          }
+        }
+      ]
+    },
+    "cameras": {
+      "displayName": "Cameras",
+      "products": [
+        {
+          "id": "canon-eos-5d-mark-iv",
+          "title": "Canon EOS 5D Mark IV",
+          "description": "30.4MP full-frame CMOS sensor, DIGIC 6+ processor, 4K video recording",
+          "price": 129999,
+          "originalPrice": 149999,
+          "image": "img/products/canon-5d-mark-iv.jpg",
+          "badge": "Best Pro-Grade",
+          "rating": 4.7,
+          "reviewCount": 543,
+          "affiliateLink": "https://amzn.to/canon5dmarkiv",
+          "category": "cameras",
+          "subcategory": "dslr",
+          "featured": true,
+          "meta": {
+            "sensor": "30.4MP",
+            "video": "4K",
+            "connectivity": "Wi-Fi/NFC"
+          }
+        }
+      ]
+    },
+    "audio": {
+      "displayName": "Audio",
+      "products": []
+    },
+    "appliances": {
+      "displayName": "Home Appliances",
+      "products": []
+    },
+    "fans": {
+      "displayName": "Ceiling Fans",
+      "products": []
+    }
+  }
+}
