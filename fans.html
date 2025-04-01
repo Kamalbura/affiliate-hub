@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceiling Fans | TechDeals Hub</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/enhanced-ui.css">
+    <link rel="stylesheet" href="css/navbar-fix.css">
+    <link rel="stylesheet" href="css/common-components.css">
+    <link rel="stylesheet" href="css/visual-enhancements.css">
+    <link rel="stylesheet" href="css/page-themes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="integrity-version" content="1.0">
+<script src="js/theme-init.js"></script>
+    </head>
+<body class="fans-theme page-theme">
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>TechDeals<span>Hub</span></h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="electronics.html">Electronics</a></li>
+                    <li><a href="appliances.html">Appliances</a></li>
+                    <li><a href="cameras.html">Cameras</a></li>
+                    <li><a href="audio.html">Audio</a></li>
+                    <li><a href="fans.html" class="active">Fans</a></li>
+                    <li><a href="coolers.html">Coolers</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="search-toggle"><i class="fas fa-search"></i></button>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div class="search-overlay">
+            <div class="container">
+                <form class="search-form">
+                    <input type="text" placeholder="Search for products, brands...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <button class="search-close"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="hero fans-bg">
+        <div class="container">
+            <div class="hero-content">
+                <i class="fas fa-wind hero-icon"></i>
+                <h2>Ceiling Fans Buying Guide</h2>
+                <p>Find energy-efficient and stylish fans for your home</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buyer's Guide Section -->
+    <section class="buyer-guide">
+        <div class="container">
+            <h2 class="section-title">How to Choose the Right Ceiling Fan</h2>
+            
+            <div class="guide-cards">
+                <div class="guide-card">
+                    <div class="guide-icon">
+                        <i class="fas fa-ruler-combined"></i>
+                    </div>
+                    <h3>Size Matters</h3>
+                    <p>For rooms up to 75 sq.ft, choose fans with blade span of 36" or less. For 75-175 sq.ft rooms, 42-48" fans work best. For larger rooms, go for 52" or more.</p>
+                </div>
+                
+                <div class="guide-card">
+                    <div class="guide-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Energy Efficiency</h3>
+                    <p>Look for BEE star ratings - higher stars mean more efficiency. BLDC motors consume up to 60% less electricity than regular fans.</p>
+                </div>
+                
+                <div class="guide-card">
+                    <div class="guide-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3>Air Delivery</h3>
+                    <p>Check for high air delivery (measured in CMM). Good ceiling fans should deliver at least 210-220 CMM for effective cooling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="product-section" id="ceiling-fans">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Top Ceiling Fans</h2>
+                <div class="filter-controls">
+                    <div class="price-filter">
+                        <label for="fanPrice">Price Range:</label>
+                        <input type="range" min="1000" max="10000" value="5000" class="price-range" id="fanPrice">
+                        <span id="fanPriceValue">₹5,000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <!-- Fan 1 -->
+                <div class="product-card" data-price="6999" data-category="premium" data-user="professional family">
+                    <div class="product-badge">Best Premium</div>
+                    <div class="product-image">
+                        <img src="img/products/atomberg-renesa.jpg" alt="Atomberg Renesa">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Atomberg Renesa BLDC</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.8 (2340 reviews)</span>
+                        </div>
+                        <p class="product-description">BLDC motor, remote control, 28W power consumption, 1280mm sweep</p>
+                        <div class="product-price">₹6,999</div>
+                        <div class="product-meta">
+                            <span><i class="fas fa-bolt"></i> 5 Star Rating</span>
+                            <span><i class="fas fa-wind"></i> 235 CMM</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 350 RPM</span>
+                        </div>
+                        <a href="https://amzn.to/youraffiliatelink" class="btn btn-primary" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+
+                <!-- Fan 2 -->
+                <div class="product-card" data-price="3999" data-category="midrange" data-user="professional student family">
+                    <div class="product-badge">Best Value</div>
+                    <div class="product-image">
+                        <img src="img/products/havells-stealth-air.jpg" alt="Havells Stealth Air">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Havells Stealth Air</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.5 (1785 reviews)</span>
+                        </div>
+                        <p class="product-description">Aerodynamic blade design, dust-resistant motor, 1200mm sweep</p>
+                        <div class="product-price">₹3,999</div>
+                        <div class="product-meta">
+                            <span><i class="fas fa-bolt"></i> 4 Star Rating</span>
+                            <span><i class="fas fa-wind"></i> 220 CMM</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 320 RPM</span>
+                        </div>
+                        <a href="https://amzn.to/youraffiliatelink" class="btn btn-primary" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+
+                <!-- Fan 3 -->
+                <div class="product-card" data-price="1899" data-category="budget" data-user="student">
+                    <div class="product-badge">Best Budget</div>
+                    <div class="product-image">
+                        <img src="img/products/orient-apex-fx.jpg" alt="Orient Electric Apex-FX">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Orient Electric Apex-FX</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.0 (3254 reviews)</span>
+                        </div>
+                        <p class="product-description">Double ball bearing, rust-free blades, 1200mm sweep size</p>
+                        <div class="product-price">₹1,899</div>
+                        <div class="product-meta">
+                            <span><i class="fas fa-bolt"></i> 3 Star Rating</span>
+                            <span><i class="fas fa-wind"></i> 210 CMM</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 300 RPM</span>
+                        </div>
+                        <a href="https://amzn.to/youraffiliatelink" class="btn btn-primary" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table Section -->
+    <section class="comparison-section">
+        <div class="container">
+            <h2 class="section-title">Fan Comparison Chart</h2>
+            
+            <div class="table-container">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Model</th>
+                            <th>Power</th>
+                            <th>Air Delivery</th>
+                            <th>Energy Rating</th>
+                            <th>Features</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Atomberg Renesa</td>
+                            <td>28W</td>
+                            <td>235 CMM</td>
+                            <td>5 Star</td>
+                            <td>BLDC, Remote, Timer, Sleep Mode</td>
+                            <td>₹6,999</td>
+                        </tr>
+                        <tr>
+                            <td>Havells Stealth Air</td>
+                            <td>52W</td>
+                            <td>220 CMM</td>
+                            <td>4 Star</td>
+                            <td>Low Noise, Decorative Trims</td>
+                            <td>₹3,999</td>
+                        </tr>
+                        <tr>
+                            <td>Orient Apex-FX</td>
+                            <td>70W</td>
+                            <td>210 CMM</td>
+                            <td>3 Star</td>
+                            <td>Double Ball Bearing, Decorative Design</td>
+                            <td>₹1,899</td>
+                        </tr>
+                        <tr>
+                            <td>Crompton Energion</td>
+                            <td>35W</td>
+                            <td>230 CMM</td>
+                            <td>5 Star</td>
+                            <td>BLDC Motor, Remote, Anti-dust</td>
+                            <td>₹5,899</td>
+                        </tr>
+                        <tr>
+                            <td>Usha Bloom</td>
+                            <td>60W</td>
+                            <td>215 CMM</td>
+                            <td>4 Star</td>
+                            <td>Decorative, Anti-rust Coating</td>
+                            <td>₹2,999</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated with Deals & Reviews</h2>
+                <p>Subscribe to our newsletter for the latest ceiling fan deals, energy efficiency tips, and buying guides</p>
+                
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+                
+                <p class="privacy-note">By subscribing, you agree to our Privacy Policy. We'll never share your email with third parties.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>TechDeals<span>Hub</span></h2>
+                    <p>Your guide to smart tech purchases</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="electronics.html">Electronics</a></li>
+                            <li><a href="appliances.html">Appliances</a></li>
+                            <li><a href="fans.html">Ceiling Fans</a></li>
+                            <li><a href="coolers.html">Air Coolers</a></li>
+                            <li><a href="cameras.html">Cameras</a></li>
+                            <li><a href="audio.html">Audio Devices</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Affiliate Disclosure</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 TechDeals Hub. All rights reserved.</p>
+                <p>Amazon, the Amazon logo, and the Amazon Associate logo are trademarks of Amazon.com, Inc. or its affiliates.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/image-fetcher.js"></script>
+    <script src="js/enhanced-ui.js"></script>
+    <script src="js/background-enhancer.js"></script>
+    <script src="js/integrity-checker.js"></script>
+    <script>
+        // Price range slider
+        const fanRangeSlider = document.getElementById('fanPrice');
+        const fanRangeValue = document.getElementById('fanPriceValue');
+
+        // Format currency
+        function formatCurrency(value) {
+            return '₹' + parseInt(value).toLocaleString('en-IN');
+        }
+
+        // Update price display on slider change
+        if (fanRangeSlider && fanRangeValue) {
+            fanRangeSlider.addEventListener('input', function() {
+                fanRangeValue.textContent = formatCurrency(this.value);
+                filterProducts('ceiling-fans', this.value);
+            });
+        }
+
+        // Filter products by price
+        function filterProducts(sectionId, maxPrice) {
+            const section = document.getElementById(sectionId);
+            if (!section) return;
+            
+            const products = section.querySelectorAll('.product-card');
+            
+            products.forEach(product => {
+                const price = parseInt(product.dataset.price);
+                if (price <= maxPrice) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        const navList = document.querySelector('.nav-list');
+
+        if (menuToggle && navList) {
+            menuToggle.addEventListener('click', function() {
+                navList.classList.toggle('active');
+                this.classList.toggle('active');
+            });
+        }
+    </script>
+<script src="js/theme-switcher.js"></script>
+    <script src="js/image-fetcher.js"></script>
+    <script src="js/enhanced-ui.js"></script>
+    <script src="js/background-enhancer.js"></script>
+    <script src="js/integrity-checker.js"></script>
+    </body>
+</html>
+

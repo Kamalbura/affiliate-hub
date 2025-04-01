@@ -1,0 +1,304 @@
+/* Theme Colors for Light/Dark Mode */
+
+:root {
+    /* Light theme - White, Grey, Blue */
+    --primary-color: #2563eb; /* Blue */
+    --primary-dark: #1d4ed8;
+    --primary-rgb: 37, 99, 235;
+    --secondary-color: #4b5563; /* Grey */
+    --secondary-rgb: 75, 85, 99;
+    --text-primary: #1f2937;
+    --text-secondary: #4b5563;
+    --text-light: #6b7280;
+    --border-color: #e5e7eb;
+    --background-color: #ffffff; /* White */
+    --card-bg: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.05);
+    --header-bg: linear-gradient(to right, #2563eb, #3b82f6);
+    --header-text: #ffffff;
+    --footer-bg: #f3f4f6;
+    --footer-text: #4b5563;
+    --body-bg: #f9fafb;
+    --highlight-color: #dbeafe;
+    --input-bg: #ffffff;
+    --input-border: #d1d5db;
+    --btn-primary-text: #ffffff;
+    --filter-tab-bg: #f3f4f6;
+    --filter-tab-border: #e5e7eb;
+    --filter-tab-text: #4b5563;
+    --success-color: #10b981;
+    --error-color: #ef4444;
+    --warning-color: #f59e0b;
+    --info-color: #3b82f6;
+    --table-border: #e5e7eb;
+    --table-header-bg: #f3f4f6;
+    --table-row-even: #ffffff;
+    --table-row-odd: #f9fafb;
+    --table-row-hover: #f3f4f6;
+    --scrollbar-track: #f1f1f1;
+    --scrollbar-thumb: #c1c1c1;
+    --scrollbar-thumb-hover: #a8a8a8;
+    --tooltip-bg: rgba(0, 0, 0, 0.8);
+    --tooltip-text: #ffffff;
+    
+    /* Accent colors */
+    --accent-blue: #3b82f6;
+    --accent-purple: #8b5cf6;
+    --accent-red: #ef4444;
+    --accent-green: #10b981;
+    --accent-yellow: #f59e0b;
+}
+
+[data-theme="dark"] {
+    /* Dark theme - Black, Grey, Light Blue */
+    --primary-color: #60a5fa; /* Light blue */
+    --primary-dark: #93c5fd;
+    --primary-rgb: 96, 165, 250;
+    --secondary-color: #4b5563; /* Grey */
+    --secondary-rgb: 75, 85, 99;
+    --text-primary: #f9fafb;
+    --text-secondary: #e5e7eb;
+    --text-light: #d1d5db;
+    --border-color: #374151;
+    --background-color: #111827; /* Dark background */
+    --card-bg: #1f2937; 
+    --shadow-color: rgba(0, 0, 0, 0.25);
+    --header-bg: linear-gradient(to right, #1e3a8a, #1e40af);
+    --header-text: #f3f4f6;
+    --footer-bg: #1f2937;
+    --footer-text: #e5e7eb;
+    --body-bg: #111827;
+    --highlight-color: #1e3a8a;
+    --input-bg: #1f2937;
+    --input-border: #374151;
+    --btn-primary-text: #ffffff;
+    --filter-tab-bg: #1f2937;
+    --filter-tab-border: #374151;
+    --filter-tab-text: #d1d5db;
+    --success-color: #34d399;
+    --error-color: #f87171;
+    --warning-color: #fbbf24;
+    --info-color: #60a5fa;
+    --table-border: #374151;
+    --table-header-bg: #1f2937;
+    --table-row-even: #1f2937;
+    --table-row-odd: #111827;
+    --table-row-hover: #374151;
+    --scrollbar-track: #1f2937;
+    --scrollbar-thumb: #4b5563;
+    --scrollbar-thumb-hover: #6b7280;
+    --tooltip-bg: rgba(31, 41, 55, 0.95);
+    --tooltip-text: #f3f4f6;
+}
+
+/* Apply theme to body and html */
+html, body {
+    background-color: var(--body-bg);
+    color: var(--text-primary);
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Additional dark mode overrides */
+[data-theme="dark"] .product-card,
+[data-theme="dark"] .trending-card,
+[data-theme="dark"] .guide-card,
+[data-theme="dark"] .deal-card,
+[data-theme="dark"] .testimonial-card {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    background: #1f2937;
+}
+
+[data-theme="dark"] .newsletter {
+    background: linear-gradient(135deg, #1f2937, #111827);
+}
+
+[data-theme="dark"] .stats-section {
+    background-color: #1f2937;
+}
+
+[data-theme="dark"] .featured-categories,
+[data-theme="dark"] .trending-products {
+    background-color: var(--body-bg);
+}
+
+[data-theme="dark"] .newsletter-form input {
+    background-color: var(--input-bg);
+    border-color: var(--input-border);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .comparison-table {
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .comparison-table thead {
+    background-color: var(--table-header-bg);
+}
+
+[data-theme="dark"] .comparison-table tbody tr:nth-child(odd) {
+    background-color: var(--table-row-odd);
+}
+
+[data-theme="dark"] .comparison-table tbody tr:nth-child(even) {
+    background-color: var(--table-row-even);
+}
+
+[data-theme="dark"] .comparison-table tbody tr:hover {
+    background-color: var(--table-row-hover);
+}
+
+[data-theme="dark"] .comparison-table td {
+    border-bottom-color: #374151;
+}
+
+[data-theme="dark"] .hero {
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.7);
+}
+
+[data-theme="dark"] .hero::before {
+    background: linear-gradient(135deg, rgba(31,41,55,0.95) 0%, rgba(31,41,55,0.7) 100%);
+}
+
+[data-theme="dark"] input,
+[data-theme="dark"] select {
+    background-color: var(--input-bg);
+    border-color: var(--input-border);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] input::placeholder {
+    color: var(--text-light);
+}
+
+[data-theme="dark"] .circle-icon,
+[data-theme="dark"] .guide-icon {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .btn-outline {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+[data-theme="dark"] .section-title::after {
+    opacity: 0.8;
+}
+
+[data-theme="dark"] .hero-icon {
+    box-shadow: 
+        0 15px 35px rgba(0, 0, 0, 0.5),
+        inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .product-image,
+[data-theme="dark"] .trending-image,
+[data-theme="dark"] .deal-image {
+    background-color: #111827;
+}
+
+[data-theme="dark"] .search-overlay {
+    background-color: #1f2937;
+    border-bottom: 1px solid #374151;
+}
+
+/* Make sure filter tabs are consistent */
+[data-theme="dark"] .filter-tab {
+    background-color: var(--filter-tab-bg);
+    border-color: var(--filter-tab-border);
+    color: var(--filter-tab-text);
+}
+
+[data-theme="dark"] .filter-tab:hover {
+    background-color: #374151;
+}
+
+[data-theme="dark"] .filter-tab.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: black;
+}
+
+/* Consistent scrollbar styling for both themes */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+}
+
+/* Subtle background pattern for dark mode */
+[data-theme="dark"] {
+    background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 50px 50px;
+}
+
+/* Enhanced card elements with subtle gradients */
+.product-card,
+.trending-card,
+.guide-card,
+.deal-card,
+.testimonial-card {
+    background: linear-gradient(145deg, #fff, #f9fafb);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+    border: none;
+}
+
+/* Enhanced section backgrounds */
+.featured-deals,
+.stats-section,
+.trending-products,
+.testimonials-section {
+    position: relative;
+    z-index: 1;
+}
+
+.featured-deals::after,
+.trending-products::after,
+.testimonials-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, 
+        rgba(var(--primary-rgb), 0.03) 0%,
+        rgba(var(--secondary-rgb), 0.03) 100%);
+    z-index: -1;
+}
+
+/* Button styling with gradient */
+.btn-primary {
+    background: linear-gradient(45deg, var(--primary-color), var(--primary-dark));
+    box-shadow: 0 4px 15px rgba(var(--primary-rgb), 0.25);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, var(--primary-dark), var(--primary-color));
+    box-shadow: 0 5px 20px rgba(var(--primary-rgb), 0.35);
+    transform: translateY(-2px);
+}
+
+/* Section headers with decorative underlines */
+.section-title::after {
+    background: linear-gradient(90deg, 
+        transparent, 
+        var(--primary-color), 
+        transparent);
+    height: 3px;
+    border-radius: 3px;
+}

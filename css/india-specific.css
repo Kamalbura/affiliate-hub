@@ -1,0 +1,93 @@
+/* India-specific styles for TechDeals Hub */
+
+/* Made in India badge */
+.indian-product-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: linear-gradient(to right, #FF9933, #FFFFFF, #138808);
+    border-radius: 4px;
+    padding: 2px;
+    z-index: 5;
+}
+
+.indian-product-badge span {
+    display: block;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 3px;
+    color: #333;
+}
+
+/* Indian store link enhancement */
+.indian-store-link {
+    position: relative;
+}
+
+.indian-store-link::after {
+    content: '🇮🇳';
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
+/* Indian flag colors for various elements */
+.india-theme-accent {
+    background: linear-gradient(to right, #FF9933, #FFFFFF, #138808);
+    padding: 2px;
+    border-radius: 5px;
+}
+
+/* Indian pricing format */
+.product-price.indian-format,
+.current-price.indian-format,
+.deal-current-price.indian-format {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Enhanced backgrounds for Indian shopping days */
+.diwali-promo {
+    background-image: url('../img/patterns/diwali-pattern.png');
+    background-size: 200px;
+    background-repeat: repeat;
+    background-color: rgba(255, 240, 200, 0.2);
+    border: 2px solid #FFD700;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.independence-promo {
+    background: linear-gradient(135deg, rgba(255, 153, 51, 0.1), rgba(255, 255, 255, 0.1), rgba(19, 136, 8, 0.1));
+    border: 2px solid #007FFF;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+/* Diwali celebration animation */
+@keyframes diwaliBlink {
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 1; }
+}
+
+.diwali-light {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: diwaliBlink 1s infinite;
+}
+
+.diwali-light:nth-child(odd) {
+    background-color: #FF9933;
+}
+
+.diwali-light:nth-child(even) {
+    background-color: #FFD700;
+}
+
+/* Add this to the main stylesheet reference in all HTML files */

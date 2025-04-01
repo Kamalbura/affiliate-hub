@@ -1,0 +1,164 @@
+@media screen and (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Header & Navigation */
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    .nav-list {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        background-color: var(--secondary-color);
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        transition: height 0.3s ease;
+    }
+    
+    .nav-list.active {
+        height: auto;
+        padding: 20px 0;
+    }
+    
+    .nav-list li {
+        margin: 15px 0;
+    }
+    
+    /* Hero Section */
+    .hero {
+        padding: 100px 0;
+    }
+    
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+    
+    /* User Preferences */
+    .preference-card {
+        padding: 20px;
+    }
+    
+    /* Product Cards */
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    /* Newsletter */
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .newsletter-form input {
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+    
+    .newsletter-form button {
+        border-radius: 4px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* Typography */
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    /* Hero Section */
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    /* Product Cards */
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    /* Category Cards */
+    .category-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .category-card {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    /* Button groups */
+    .button-group {
+        flex-wrap: wrap;
+    }
+    
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .link-column h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    /* General spacing adjustments */
+    .product-section,
+    .more-categories,
+    .about-section,
+    .newsletter {
+        padding: 60px 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /* Header */
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+    
+    /* Product Details */
+    .product-meta {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+    
+    /* Product Cards */
+    .product-image {
+        height: 180px;
+    }
+    
+    /* User Preferences */
+    .button-group {
+        flex-direction: column;
+    }
+    
+    .pref-btn {
+        width: 100%;
+    }
+}

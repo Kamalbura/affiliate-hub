@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cameras | TechDeals Hub</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/enhanced-ui.css">
+    <link rel="stylesheet" href="css/navbar-fix.css">
+    <link rel="stylesheet" href="css/common-components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/visual-enhancements.css">
+    <link rel="stylesheet" href="css/page-themes.css">
+    <link rel="stylesheet" href="css/theme-colors.css">
+    <link rel="stylesheet" href="css/enhanced-animations.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="integrity-version" content="1.0">
+<script src="js/theme-init.js"></script>
+    </head>
+<body class="cameras-theme page-theme">
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>TechDeals<span>Hub</span></h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="electronics.html">Electronics</a></li>
+                    <li><a href="appliances.html">Appliances</a></li>
+                    <li><a href="cameras.html" class="active">Cameras</a></li>
+                    <li><a href="audio.html">Audio</a></li>
+                    <li><a href="fans.html">Fans</a></li>
+                    <li><a href="coolers.html">Coolers</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="search-toggle"><i class="fas fa-search"></i></button>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div class="search-overlay">
+            <div class="container">
+                <form class="search-form">
+                    <input type="text" placeholder="Search for products, brands...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <button class="search-close"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner with enhanced background -->
+    <section class="hero cameras-bg">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Font Awesome Icon -->
+                <i class="fas fa-camera hero-icon"></i>
+                
+                <!-- Material Icons Alternative -->
+                <!-- <i class="material-icons hero-icon">photo_camera</i> -->
+                
+                <h2>Camera Buying Guide</h2>
+                <p>Find the perfect camera to capture your precious moments with crystal clarity</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buyer's Guide Section -->
+    <section class="buyer-guide">
+        <div class="container">
+            <h2 class="section-title">How to Choose the Right Camera</h2>
+            
+            <div class="guide-cards">
+                <div class="guide-card">
+                    <div class="guide-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Camera Type</h3>
+                    <p>DSLR cameras offer versatility and control. Mirrorless cameras are compact with similar quality. Point-and-shoot cameras are best for beginners and casual use.</p>
+                </div>
+                
+                <div class="guide-card">
+                    <div class="guide-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Sensor Size</h3>
+                    <p>Larger sensors (full-frame) capture more light and detail. APS-C sensors balance performance and portability. Micro Four Thirds are compact with good quality.</p>
+                </div>
+                
+                <div class="guide-card">
+                    <div class="guide-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>Megapixels</h3>
+                    <p>Higher megapixels allow for larger prints and cropping. For most users, 20-24MP is sufficient. For professional use, consider 30MP+ cameras.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DSLR Cameras Section -->
+    <section class="product-section" id="dslr-cameras">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Top DSLR Cameras</h2>
+                <div class="filter-controls">
+                    <div class="price-filter">
+                        <label for="dslrPrice">Price Range:</label>
+                        <input type="range" min="30000" max="200000" value="80000" class="price-range" id="dslrPrice">
+                        <span id="dslrPriceValue">₹80,000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <!-- DSLR Camera 1 -->
+                <div class="product-card" data-price="129999" data-category="premium" data-user="professional">
+                    <div class="product-badge">Best Pro-Grade</div>
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300" alt="Canon EOS 5D Mark IV">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Canon EOS 5D Mark IV</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.7 (543 reviews)</span>
+                        </div>
+                        <p class="product-description">30.4MP full-frame CMOS sensor, DIGIC 6+ processor, 4K video recording</p>
+                        <div class="product-price">₹1,29,999</div>
+                        <div class="product-meta">
+                            <span><i class="fas fa-microchip"></i> 30.4MP</span>
+                            <span><i class="fas fa-film"></i> 4K Video</span>
+                            <span><i class="fas fa-wifi"></i> Wi-Fi/NFC</span>
+                        </div>
+                        <a href="https://amzn.to/youraffiliatelink" class="btn btn-primary" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+
+                <!-- DSLR Camera 2 -->
+                <div class="product-card" data-price="74999" data-category="midrange" data-user="professional student">
+                    <div class="product-badge">Best Value</div>
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300" alt="Nikon D7500">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Nikon D7500</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.8 (762 reviews)</span>
+                        </div>
+                        <p class="product-description">20.9MP DX-format CMOS sensor, EXPEED 5 processor, 4K UHD video</p>
+                        <div class="product-price">₹74,999</div>
+                        <div class="product-meta">
+                            <span><i class="fas fa-microchip"></i> 20.9MP</span>
+                            <span><i class="fas fa-film"></i> 4K UHD</span>
+                            <span><i class="fas fa-bolt"></i> 8 FPS</span>
+                        </div>
+                        <a href="https://amzn.to/youraffiliatelink" class="btn btn-primary" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+
+                <!-- DSLR Camera 3 -->
+                <div class="product-card" data-price="48999" data-category="budget" data-user="student family">
+                    <div class="product-badge">Best Entry-Level</div>
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300" alt="Canon EOS 850D">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Canon EOS 850D</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.2 (389 reviews)</span>
+                        </div>
+                        <p class="product-description">24.1MP APS-C CMOS sensor, DIGIC 8 processor, 4K video recording</p>
+                        <div class="product-price">₹48,999</div>
+                        <div class="product-meta">
+                            <span><i class="fas fa-microchip"></i> 24.1MP</span>
+                            <span><i class="fas fa-film"></i> 4K Video</span>
+                            <span><i class="fas fa-bolt"></i> 7 FPS</span>
+                        </div>
+                        <a href="https://amzn.to/youraffiliatelink" class="btn btn-primary" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-secondary">View All DSLR Cameras</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mirrorless Cameras Section -->
+    <section class="product-section" id="mirrorless-cameras">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Top Mirrorless Cameras</h2>
+                <div class="filter-controls">
+                    <div class="price-filter">
+                        <label for="mirrorlessPrice">Price Range:</label>
+                        <input type="range" min="40000" max="250000" value="100000" class="price-range" id="mirrorlessPrice">
+                        <span id="mirrorlessPriceValue">₹1,00,000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <!-- Mirrorless Camera 1 -->
+                <div class="product-card" data-price="164999" data-category="premium" data-user="professional">
+                    <div class="product-badge">Best Premium</div>
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300" alt="Sony Alpha A7 III">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Sony Alpha A7 III</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.9 (832 reviews)</span>
+                        </div>
+                        <p class="product-description">24.2MP full-frame BSI CMOS sensor, 4K HDR video, 10fps continuous shooting</p>
+                        <div class="product-price">₹1,64,999</div>
+                        <div class="product-meta">
+                            <span><i class="fas fa-microchip"></i> 24.2MP</span>
+                            <span><i class="fas fa-film"></i> 4K HDR</span>
+                            <span><i class="fas fa-bolt"></i> 10 FPS</span>
+                        </div>
+                        <a href="https://amzn.to/youraffiliatelink" class="btn btn-primary" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+
+                <!-- Mirrorless Camera 2 -->
+                <div class="product-card" data-price="99999" data-category="midrange" data-user="professional student">
+                    <div class="product-badge">Best Value</div>
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300" alt="Fujifilm X-T4">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Fujifilm X-T4</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.6 (573 reviews)</span>
+                        </div>
+                        <p class="product-description">26.1MP APS-C X-Trans CMOS 4 sensor, 5-axis IBIS, 4K/60p video</p>
+                        <div class="product-price">₹99,999</div>
+                        <div class="product-meta">
+                            <span><i class="fas fa-microchip"></i> 26.1MP</span>
+                            <span><i class="fas fa-film"></i> 4K/60p</span>
+                            <span><i class="fas fa-bolt"></i> 15 FPS</span>
+                        </div>
+                        <a href="https://amzn.to/youraffiliatelink" class="btn btn-primary" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+
+                <!-- Mirrorless Camera 3 -->
+                <div class="product-card" data-price="64999" data-category="budget" data-user="student family">
+                    <div class="product-badge">Best Entry-Level</div>
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300" alt="Canon EOS M50 Mark II">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Canon EOS M50 Mark II</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.1 (428 reviews)</span>
+                        </div>
+                        <p class="product-description">24.1MP APS-C CMOS sensor, DIGIC 8 processor, 4K video, vari-angle touchscreen</p>
+                        <div class="product-price">₹64,999</div>
+                        <div class="product-meta">
+                            <span><i class="fas fa-microchip"></i> 24.1MP</span>
+                            <span><i class="fas fa-film"></i> 4K Video</span>
+                            <span><i class="fas fa-wifi"></i> Bluetooth/Wi-Fi</span>
+                        </div>
+                        <a href="https://amzn.to/youraffiliatelink" class="btn btn-primary" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table Section -->
+    <section class="comparison-section">
+        <div class="container">
+            <h2 class="section-title">Camera Comparison Chart</h2>
+            
+            <div class="table-container">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Model</th>
+                            <th>Type</th>
+                            <th>Sensor</th>
+                            <th>Resolution</th>
+                            <th>Key Features</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Canon EOS 5D Mark IV</td>
+                            <td>DSLR</td>
+                            <td>Full-Frame</td>
+                            <td>30.4MP</td>
+                            <td>4K Video, Wi-Fi, GPS</td>
+                            <td>₹1,29,999</td>
+                        </tr>
+                        <tr>
+                            <td>Nikon D7500</td>
+                            <td>DSLR</td>
+                            <td>APS-C</td>
+                            <td>20.9MP</td>
+                            <td>4K Video, 8 FPS</td>
+                            <td>₹74,999</td>
+                        </tr>
+                        <tr>
+                            <td>Sony Alpha A7 III</td>
+                            <td>Mirrorless</td>
+                            <td>Full-Frame</td>
+                            <td>24.2MP</td>
+                            <td>4K Video, 10 FPS, IBIS</td>
+                            <td>₹1,64,999</td>
+                        </tr>
+                        <tr>
+                            <td>Fujifilm X-T4</td>
+                            <td>Mirrorless</td>
+                            <td>APS-C</td>
+                            <td>26.1MP</td>
+                            <td>4K/60p, 15 FPS, IBIS</td>
+                            <td>₹99,999</td>
+                        </tr>
+                        <tr>
+                            <td>Canon EOS 850D</td>
+                            <td>DSLR</td>
+                            <td>APS-C</td>
+                            <td>24.1MP</td>
+                            <td>4K Video, 7 FPS</td>
+                            <td>₹48,999</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Essential Accessories -->
+    <section class="accessories-section">
+        <div class="container">
+            <h2 class="section-title">Essential Camera Accessories</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300" alt="Camera Tripod">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Manfrotto MT190XPRO4 Tripod</h3>
+                        <p class="product-description">Professional aluminum tripod with 4-section legs and quick power locks</p>
+                        <div class="product-price">₹12,999</div>
+                        <a href="https://amzn.to/youraffiliatelink" class="btn btn-primary" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300" alt="Camera Bag">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Lowepro ProTactic 450 AW II Backpack</h3>
+                        <p class="product-description">Modular backpack for professional camera gear and laptop</p>
+                        <div class="product-price">₹19,999</div>
+                        <a href="https://amzn.to/youraffiliatelink" class="btn btn-primary" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300" alt="Memory Card">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">SanDisk Extreme PRO 128GB SDXC</h3>
+                        <p class="product-description">UHS-I, Class 10, V30, U3, 170MB/s read, 90MB/s write</p>
+                        <div class="product-price">₹3,999</div>
+                        <a href="https://amzn.to/youraffiliatelink" class="btn btn-primary" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated with Camera Deals & Reviews</h2>
+                <p>Subscribe to our newsletter for the latest camera deals, photography tips, and buying guides</p>
+                
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+                
+                <p class="privacy-note">By subscribing, you agree to our Privacy Policy. We'll never share your email with third parties.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>TechDeals<span>Hub</span></h2>
+                    <p>Your guide to smart tech purchases</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="electronics.html">Electronics</a></li>
+                            <li><a href="appliances.html">Appliances</a></li>
+                            <li><a href="cameras.html">Cameras</a></li>
+                            <li><a href="audio.html">Audio Devices</a></li>
+                            <li><a href="fans.html">Ceiling Fans</a></li>
+                            <li><a href="coolers.html">Air Coolers</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Affiliate Disclosure</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 TechDeals Hub. All rights reserved.</p>
+                <p>Amazon, the Amazon logo, and the Amazon Associate logo are trademarks of Amazon.com, Inc. or its affiliates.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/image-fetcher.js"></script>
+    <script src="js/enhanced-ui.js"></script>
+    <script src="js/integrity-checker.js"></script>
+    <script>
+        // Price range sliders
+        const dslrRangeSlider = document.getElementById('dslrPrice');
+        const dslrRangeValue = document.getElementById('dslrPriceValue');
+        const mirrorlessRangeSlider = document.getElementById('mirrorlessPrice');
+        const mirrorlessRangeValue = document.getElementById('mirrorlessPriceValue');
+
+        // Format currency
+        function formatCurrency(value) {
+            return '₹' + parseInt(value).toLocaleString('en-IN');
+        }
+
+        // Update price display on slider change
+        if (dslrRangeSlider && dslrRangeValue) {
+            dslrRangeSlider.addEventListener('input', function() {
+                dslrRangeValue.textContent = formatCurrency(this.value);
+                filterProducts('dslr-cameras', this.value);
+            });
+        }
+
+        if (mirrorlessRangeSlider && mirrorlessRangeValue) {
+            mirrorlessRangeSlider.addEventListener('input', function() {
+                mirrorlessRangeValue.textContent = formatCurrency(this.value);
+                filterProducts('mirrorless-cameras', this.value);
+            });
+        }
+
+        // Filter products by price
+        function filterProducts(sectionId, maxPrice) {
+            const section = document.getElementById(sectionId);
+            if (!section) return;
+            
+            const products = section.querySelectorAll('.product-card');
+            
+            products.forEach(product => {
+                const price = parseInt(product.dataset.price);
+                if (price <= maxPrice) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        const navList = document.querySelector('.nav-list');
+
+        if (menuToggle && navList) {
+            menuToggle.addEventListener('click', function() {
+                navList.classList.toggle('active');
+                this.classList.toggle('active');
+            });
+        }
+    </script>
+<script src="js/theme-switcher.js"></script>
+    <script src="js/image-fetcher.js"></script>
+    <script src="js/enhanced-ui.js"></script>
+    <script src="js/background-enhancer.js"></script>
+    <script src="js/integrity-checker.js"></script>
+    <!-- Missing this important script at the bottom -->
+    <script src="js/common-setup.js"></script>
+    </body>
+</html>

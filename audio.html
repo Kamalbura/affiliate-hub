@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Devices | TechDeals Hub</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/enhanced-ui.css">
+    <link rel="stylesheet" href="css/navbar-fix.css">
+    <link rel="stylesheet" href="css/common-components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/visual-enhancements.css">
+    <link rel="stylesheet" href="css/page-themes.css">
+    <link rel="stylesheet" href="css/theme-colors.css">
+    <link rel="stylesheet" href="css/enhanced-animations.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="integrity-version" content="1.0">
+<script src="js/theme-init.js"></script>
+    </head>
+<body class="audio-theme page-theme">
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>TechDeals<span>Hub</span></h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="electronics.html">Electronics</a></li>
+                    <li><a href="appliances.html">Appliances</a></li>
+                    <li><a href="cameras.html">Cameras</a></li>
+                    <li><a href="audio.html" class="active">Audio</a></li>
+                    <li><a href="fans.html">Fans</a></li>
+                    <li><a href="coolers.html">Coolers</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="search-toggle"><i class="fas fa-search"></i></button>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div class="search-overlay">
+            <div class="container">
+                <form class="search-form">
+                    <input type="text" placeholder="Search for products, brands...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <button class="search-close"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner with enhanced background -->
+    <section class="hero audio-bg">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Font Awesome Icon -->
+                <i class="fas fa-headphones hero-icon"></i>
+                
+                <!-- Material Icons Alternative -->
+                <!-- <i class="material-icons hero-icon">headphones</i> -->
+                
+                <h2>Audio Devices Buying Guide</h2>
+                <p>Discover premium sound experiences with our top-rated headphones, speakers, and earbuds</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buyer's Guide Section -->
+    <section class="buyer-guide">
+        <div class="container">
+            <h2 class="section-title">How to Choose the Right Audio Device</h2>
+            
+            <div class="guide-cards">
+                <div class="guide-card">
+                    <div class="guide-icon">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <h3>Headphone Types</h3>
+                    <p>Over-ear headphones offer best sound quality but are bulkier. On-ear are more portable. In-ear earbuds are most compact but may sacrifice sound quality.</p>
+                </div>
+                
+                <div class="guide-card">
+                    <div class="guide-icon">
+                        <i class="fas fa-volume-up"></i>
+                    </div>
+                    <h3>Sound Quality</h3>
+                    <p>Look for balanced sound with good bass response, clear mids, and crisp highs. Consider frequency response range (20Hz-20kHz is standard).</p>
+                </div>
+                
+                <div class="guide-card">
+                    <div class="guide-icon">
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                    <h3>Battery Life</h3>
+                    <p>For wireless devices, consider battery life. Good earbuds offer 5-8 hours, while premium headphones can offer 20-30+ hours with the charging case.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Headphones Section -->
+    <section class="product-section" id="headphones">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Top Headphones</h2>
+                <div class="filter-controls">
+                    <div class="price-filter">
+                        <label for="headphonesPrice">Price Range:</label>
+                        <input type="range" min="1000" max="50000" value="15000" class="price-range" id="headphonesPrice">
+                        <span id="headphonesPriceValue">₹15,000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <!-- Headphone 1 -->
+                <div class="product-card" data-price="29999" data-category="premium" data-user="professional">
+                    <div class="product-badge">Best Premium</div>
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300" alt="Sony WH-1000XM4">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Sony WH-1000XM4</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.8 (1423 reviews)</span>
+                        </div>
+                        <p class="product-description">Industry-leading noise cancellation, 30-hour battery life, LDAC codec support</p>
+                        <div class="product-price">₹29,999</div>
+                        <div class="product-meta">
+                            <span><i class="fas fa-battery-full"></i> 30 hours</span>
+                            <span><i class="fas fa-bluetooth"></i> Bluetooth 5.0</span>
+                            <span><i class="fas fa-volume-mute"></i> ANC</span>
+                        </div>
+                        <a href="https://amzn.to/youraffiliatelink" class="btn btn-primary" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+
+                <!-- Headphone 2 -->
+                <div class="product-card" data-price="14999" data-category="midrange" data-user="professional student">
+                    <div class="product-badge">Best Value</div>
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300" alt="Sennheiser HD 458BT">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Sennheiser HD 458BT</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.1 (876 reviews)</span>
+                        </div>
+                        <p class="product-description">Active noise cancellation, 30-hour battery life, deep dynamic bass</p>
+                        <div class="product-price">₹14,999</div>
+                        <div class="product-meta">
+                            <span><i class="fas fa-battery-full"></i> 30 hours</span>
+                            <span><i class="fas fa-bluetooth"></i> Bluetooth 5.0</span>
+                            <span><i class="fas fa-microphone"></i> Built-in Mic</span>
+                        </div>
+                        <a href="https://amzn.to/youraffiliatelink" class="btn btn-primary" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+
+                <!-- Headphone 3 -->
+                <div class="product-card" data-price="5999" data-category="budget" data-user="student family">
+                    <div class="product-badge">Best Budget</div>
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300" alt="JBL Tune 750BTNC">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">JBL Tune 750BTNC</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.0 (2178 reviews)</span>
+                        </div>
+                        <p class="product-description">Active noise cancellation, JBL Pure Bass Sound, 15-hour battery life</p>
+                        <div class="product-price">₹5,999</div>
+                        <div class="product-meta">
+                            <span><i class="fas fa-battery-full"></i> 15 hours</span>
+                            <span><i class="fas fa-bluetooth"></i> Bluetooth 4.2</span>
+                            <span><i class="fas fa-volume-mute"></i> ANC</span>
+                        </div>
+                        <a href="https://amzn.to/youraffiliatelink" class="btn btn-primary" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-secondary">View All Headphones</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Earbuds Section -->
+    <section class="product-section" id="earbuds">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">True Wireless Earbuds</h2>
+                <div class="filter-controls">
+                    <div class="price-filter">
+                        <label for="earbudPrice">Price Range:</label>
+                        <input type="range" min="1000" max="30000" value="10000" class="price-range" id="earbudPrice">
+                        <span id="earbudPriceValue">₹10,000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <!-- Earbud 1 -->
+                <div class="product-card" data-price="24999" data-category="premium" data-user="professional">
+                    <div class="product-badge">Best Premium</div>
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300" alt="Apple AirPods Pro">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Apple AirPods Pro</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.7 (3245 reviews)</span>
+                        </div>
+                        <p class="product-description">Active noise cancellation, Transparency mode, Spatial audio, IPX4 water resistance</p>
+                        <div class="product-price">₹24,999</div>
+                        <div class="product-meta">
+                            <span><i class="fas fa-battery-full"></i> 4.5 + 24h</span>
+                            <span><i class="fas fa-volume-mute"></i> ANC</span>
+                            <span><i class="fas fa-tint"></i> IPX4</span>
+                        </div>
+                        <a href="https://amzn.to/youraffiliatelink" class="btn btn-primary" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+
+                <!-- Earbud 2 -->
+                <div class="product-card" data-price="12999" data-category="midrange" data-user="professional student">
+                    <div class="product-badge">Best Value</div>
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300" alt="Samsung Galaxy Buds Pro">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Samsung Galaxy Buds Pro</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.4 (1756 reviews)</span>
+                        </div>
+                        <p class="product-description">Intelligent ANC, 360° Audio, IPX7 waterproof, 8-hour battery life</p>
+                        <div class="product-price">₹12,999</div>
+                        <div class="product-meta">
+                            <span><i class="fas fa-battery-full"></i> 5 + 13h</span>
+                            <span><i class="fas fa-volume-mute"></i> ANC</span>
+                            <span><i class="fas fa-tint"></i> IPX7</span>
+                        </div>
+                        <a href="https://amzn.to/youraffiliatelink" class="btn btn-primary" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+
+                <!-- Earbud 3 -->
+                <div class="product-card" data-price="3999" data-category="budget" data-user="student family">
+                    <div class="product-badge">Best Budget</div>
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300" alt="OnePlus Buds Z2">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">OnePlus Buds Z2</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.0 (2987 reviews)</span>
+                        </div>
+                        <p class="product-description">Active noise cancellation up to 40dB, 11mm dynamic drivers, IP55 rating</p>
+                        <div class="product-price">₹3,999</div>
+                        <div class="product-meta">
+                            <span><i class="fas fa-battery-full"></i> 5 + 27h</span>
+                            <span><i class="fas fa-volume-mute"></i> ANC</span>
+                            <span><i class="fas fa-tint"></i> IP55</span>
+                        </div>
+                        <a href="https://amzn.to/youraffiliatelink" class="btn btn-primary" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table Section -->
+    <section class="comparison-section">
+        <div class="container">
+            <h2 class="section-title">Audio Device Comparison Chart</h2>
+            
+            <div class="table-container">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Model</th>
+                            <th>Type</th>
+                            <th>Battery Life</th>
+                            <th>Noise Cancellation</th>
+                            <th>Key Features</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sony WH-1000XM4</td>
+                            <td>Over-ear</td>
+                            <td>30 hours</td>
+                            <td>Active (Best-in-class)</td>
+                            <td>LDAC, Multi-point, Speak-to-chat</td>
+                            <td>₹29,999</td>
+                        </tr>
+                        <tr>
+                            <td>Apple AirPods Pro</td>
+                            <td>In-ear</td>
+                            <td>4.5 + 24 hours</td>
+                            <td>Active</td>
+                            <td>Spatial Audio, Transparency mode</td>
+                            <td>₹24,999</td>
+                        </tr>
+                        <tr>
+                            <td>Samsung Galaxy Buds Pro</td>
+                            <td>In-ear</td>
+                            <td>5 + 13 hours</td>
+                            <td>Active</td>
+                            <td>360° Audio, IPX7 waterproof</td>
+                            <td>₹12,999</td>
+                        </tr>
+                        <tr>
+                            <td>Sennheiser HD 458BT</td>
+                            <td>Over-ear</td>
+                            <td>30 hours</td>
+                            <td>Active</td>
+                            <td>aptX, Smart Control App</td>
+                            <td>₹14,999</td>
+                        </tr>
+                        <tr>
+                            <td>JBL Tune 750BTNC</td>
+                            <td>Over-ear</td>
+                            <td>15 hours</td>
+                            <td>Active</td>
+                            <td>JBL Pure Bass Sound, Foldable</td>
+                            <td>₹5,999</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bluetooth Speakers Section -->
+    <section class="product-section" id="speakers">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Top Bluetooth Speakers</h2>
+                <div class="filter-controls">
+                    <div class="price-filter">
+                        <label for="speakerPrice">Price Range:</label>
+                        <input type="range" min="1000" max="30000" value="8000" class="price-range" id="speakerPrice">
+                        <span id="speakerPriceValue">₹8,000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <!-- Speaker 1 -->
+                <div class="product-card" data-price="19999" data-category="premium" data-user="professional family">
+                    <div class="product-badge">Best Premium</div>
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300" alt="JBL Boombox 2">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">JBL Boombox 2</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.7 (876 reviews)</span>
+                        </div>
+                        <p class="product-description">Powerful bass, 24-hour battery life, IPX7 waterproof, can charge external devices</p>
+                        <div class="product-price">₹19,999</div>
+                        <div class="product-meta">
+                            <span><i class="fas fa-battery-full"></i> 24 hours</span>
+                            <span><i class="fas fa-tint"></i> IPX7</span>
+                            <span><i class="fas fa-plug"></i> Power Bank</span>
+                        </div>
+                        <a href="https://amzn.to/youraffiliatelink" class="btn btn-primary" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+                
+                <!-- More speakers would be added here -->
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-secondary">View All Speakers</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated with Audio Deals & Reviews</h2>
+                <p>Subscribe to our newsletter for the latest audio device deals, audiophile tips, and buying guides</p>
+                
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+                
+                <p class="privacy-note">By subscribing, you agree to our Privacy Policy. We'll never share your email with third parties.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>TechDeals<span>Hub</span></h2>
+                    <p>Your guide to smart tech purchases</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="electronics.html">Electronics</a></li>
+                            <li><a href="appliances.html">Appliances</a></li>
+                            <li><a href="cameras.html">Cameras</a></li>
+                            <li><a href="audio.html">Audio Devices</a></li>
+                            <li><a href="fans.html">Ceiling Fans</a></li>
+                            <li><a href="coolers.html">Air Coolers</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Affiliate Disclosure</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 TechDeals Hub. All rights reserved.</p>
+                <p>Amazon, the Amazon logo, and the Amazon Associate logo are trademarks of Amazon.com, Inc. or its affiliates.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Price range sliders
+        const headphonesRangeSlider = document.getElementById('headphonesPrice');
+        const headphonesRangeValue = document.getElementById('headphonesPriceValue');
+        const earbudRangeSlider = document.getElementById('earbudPrice');
+        const earbudRangeValue = document.getElementById('earbudPriceValue');
+        const speakerRangeSlider = document.getElementById('speakerPrice');
+        const speakerRangeValue = document.getElementById('speakerPriceValue');
+
+        // Format currency
+        function formatCurrency(value) {
+            return '₹' + parseInt(value).toLocaleString('en-IN');
+        }
+
+        // Update price display on slider change
+        if (headphonesRangeSlider && headphonesRangeValue) {
+            headphonesRangeSlider.addEventListener('input', function() {
+                headphonesRangeValue.textContent = formatCurrency(this.value);
+                filterProducts('headphones', this.value);
+            });
+        }
+
+        if (earbudRangeSlider && earbudRangeValue) {
+            earbudRangeSlider.addEventListener('input', function() {
+                earbudRangeValue.textContent = formatCurrency(this.value);
+                filterProducts('earbuds', this.value);
+            });
+        }
+
+        if (speakerRangeSlider && speakerRangeValue) {
+            speakerRangeSlider.addEventListener('input', function() {
+                speakerRangeValue.textContent = formatCurrency(this.value);
+                filterProducts('speakers', this.value);
+            });
+        }
+
+        // Filter products by price
+        function filterProducts(sectionId, maxPrice) {
+            const section = document.getElementById(sectionId);
+            if (!section) return;
+            
+            const products = section.querySelectorAll('.product-card');
+            
+            products.forEach(product => {
+                const price = parseInt(product.dataset.price);
+                if (price <= maxPrice) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        const navList = document.querySelector('.nav-list');
+
+        if (menuToggle && navList) {
+            menuToggle.addEventListener('click', function() {
+                navList.classList.toggle('active');
+                this.classList.toggle('active');
+            });
+        }
+
+        // Search overlay toggle
+        const searchToggle = document.querySelector('.search-toggle');
+        const searchOverlay = document.querySelector('.search-overlay');
+        const searchClose = document.querySelector('.search-close');
+
+        if (searchToggle && searchOverlay && searchClose) {
+            searchToggle.addEventListener('click', function() {
+                searchOverlay.classList.add('active');
+            });
+
+            searchClose.addEventListener('click', function() {
+                searchOverlay.classList.remove('active');
+            });
+        }
+    </script>
+    <script src="js/image-fetcher.js"></script>
+    <script src="js/enhanced-ui.js"></script>
+    <script src="js/integrity-checker.js"></script>
+<script src="js/theme-switcher.js"></script>
+    <script src="js/background-enhancer.js"></script>
+    <!-- Missing this important script at the bottom -->
+    <script src="js/common-setup.js"></script>
+    </body>
+</html>

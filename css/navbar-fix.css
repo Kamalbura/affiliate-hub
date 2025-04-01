@@ -1,0 +1,243 @@
+/* Navigation Bar Enhancements */
+
+/* Improve spacing and alignment */
+.header .container {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    position: relative; /* Add this to create a positioning context */
+}
+
+/* Fix for header having proper stacking */
+.header {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    background-color: var(--secondary-color); /* Ensure the header has a background */
+}
+
+/* Logo styling refinements */
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    color: var(--primary-color);
+    display: inline-block;
+}
+
+/* Navigation list improvements */
+.nav-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+    height: 100%;
+}
+
+.nav-list li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list a {
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+    text-decoration: none;
+    padding: 8px 0;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-list a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-list a:hover::after,
+.nav-list a.active::after {
+    width: 100%;
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+    color: var(--primary-color);
+}
+
+/* Header actions styling */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-toggle, 
+.mobile-menu-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.search-toggle:hover, 
+.mobile-menu-toggle:hover {
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+.search-toggle:focus, 
+.mobile-menu-toggle:focus {
+    outline: none;
+}
+
+/* Enhanced mobile menu toggle */
+.mobile-menu-toggle {
+    display: none;
+    position: relative;
+    z-index: 1001;
+}
+
+.mobile-menu-toggle.active i:before {
+    content: "\f00d"; /* Changes to X icon when active */
+}
+
+/* Search overlay refinements - FIX FOR CUT-OFF NAVBAR */
+.search-overlay {
+    position: absolute;
+    top: -200%; /* Move it further up to avoid cutting navbar */
+    left: 0;
+    right: 0;
+    background-color: var(--secondary-color);
+    padding: 15px 0;
+    transition: top 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    visibility: hidden; /* Start with hidden state */
+    opacity: 0; /* Start fully transparent */
+}
+
+.search-overlay.active {
+    top: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.search-form {
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+.search-form input {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;
+}
+
+.search-form button {
+    background-color: var(--primary-color);
+    border: none;
+    color: #fff;
+    padding: 0 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: var(--primary-dark);
+}
+
+.search-close {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.search-close:hover {
+    color: var(--primary-color);
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Mobile responsive enhancements */
+@media screen and (max-width: 992px) {
+    .nav-list {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    .nav-list {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        background-color: var(--secondary-color);
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        transition: all 0.3s ease;
+        opacity: 0;
+        z-index: 1000;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        gap: 0;
+    }
+    
+    .nav-list.active {
+        height: auto;
+        padding: 20px 0;
+        opacity: 1;
+    }
+    
+    .nav-list li {
+        margin: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-list a {
+        display: block;
+        padding: 10px 0;
+    }
+    
+    .nav-list a::after {
+        display: none;
+    }
+}

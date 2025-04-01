@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics | TechDeals Hub</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/enhanced-ui.css">
+    <link rel="stylesheet" href="css/navbar-fix.css">
+    <link rel="stylesheet" href="css/common-components.css">
+    <link rel="stylesheet" href="css/visual-enhancements.css">
+    <link rel="stylesheet" href="css/page-themes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="integrity-version" content="1.0">
+<script src="js/theme-init.js"></script>
+    </head>
+<body class="electronics-theme page-theme">
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>TechDeals<span>Hub</span></h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="electronics.html" class="active">Electronics</a></li>
+                    <li><a href="appliances.html">Appliances</a></li>
+                    <li><a href="cameras.html">Cameras</a></li>
+                    <li><a href="audio.html">Audio</a></li>
+                    <li><a href="fans.html">Fans</a></li>
+                    <li><a href="coolers.html">Coolers</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="search-toggle"><i class="fas fa-search"></i></button>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div class="search-overlay">
+            <div class="container">
+                <form class="search-form">
+                    <input type="text" placeholder="Search for products, brands...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <button class="search-close"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Enhanced Hero Section with rich background -->
+    <section class="hero electronics-bg">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Font Awesome Icon Option -->
+                <i class="fas fa-mobile-alt hero-icon"></i>
+                
+                <!-- Material Icons Alternative (comment out one of these options) -->
+                <!-- <i class="material-icons hero-icon">devices</i> -->
+                
+                <h2>Electronics Buying Guide</h2>
+                <p>Find the perfect smartphones, laptops, and tech gadgets with our expert recommendations</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Phones Section -->
+    <section class="product-section" id="mobiles">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Top Mobile Phones</h2>
+                <div class="filter-controls">
+                    <div class="price-filter">
+                        <label for="mobilePrice">Price Range:</label>
+                        <input type="range" min="5000" max="150000" value="50000" class="price-range" id="mobilePrice">
+                        <span id="mobilePriceValue">₹50,000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <!-- Mobile 1 -->
+                <div class="product-card" data-price="79999" data-category="premium" data-user="professional family">
+                    <div class="product-badge">Best Camera</div>
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300" alt="iPhone 14 Pro">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">iPhone 14 Pro</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.5 (2120 reviews)</span>
+                        </div>
+                        <p class="product-description">A16 Bionic chip, 48MP camera system, Dynamic Island</p>
+                        <div class="product-price">₹79,999</div>
+                        <div class="product-meta">
+                            <span><i class="fas fa-memory"></i> 128GB</span>
+                            <span><i class="fas fa-mobile-alt"></i> 6.1"</span>
+                            <span><i class="fas fa-battery-full"></i> 3200mAh</span>
+                        </div>
+                        <a href="https://amzn.to/youraffiliatelink" class="btn btn-primary" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+
+                <!-- Mobile 2 -->
+                <div class="product-card" data-price="59999" data-category="midrange" data-user="professional student">
+                    <div class="product-badge">Best Value</div>
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300" alt="Samsung Galaxy S23">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Samsung Galaxy S23</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.8 (1892 reviews)</span>
+                        </div>
+                        <p class="product-description">Snapdragon 8 Gen 2, 50MP camera, 120Hz AMOLED display</p>
+                        <div class="product-price">₹59,999</div>
+                        <div class="product-meta">
+                            <span><i class="fas fa-memory"></i> 256GB</span>
+                            <span><i class="fas fa-mobile-alt"></i> 6.1"</span>
+                            <span><i class="fas fa-battery-full"></i> 3900mAh</span>
+                        </div>
+                        <a href="https://amzn.to/youraffiliatelink" class="btn btn-primary" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+
+                <!-- Mobile 3 -->
+                <div class="product-card" data-price="29999" data-category="budget" data-user="student family">
+                    <div class="product-badge">Best Budget</div>
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300" alt="Google Pixel 6a">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Google Pixel 6a</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.0 (1254 reviews)</span>
+                        </div>
+                        <p class="product-description">Google Tensor chip, amazing camera, pure Android experience</p>
+                        <div class="product-price">₹29,999</div>
+                        <div class="product-meta">
+                            <span><i class="fas fa-memory"></i> 128GB</span>
+                            <span><i class="fas fa-mobile-alt"></i> 6.1"</span>
+                            <span><i class="fas fa-battery-full"></i> 4410mAh</span>
+                        </div>
+                        <a href="https://amzn.to/youraffiliatelink" class="btn btn-primary" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-secondary">View All Phones</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Laptop Section -->
+    <section class="product-section" id="laptops">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Top Laptops</h2>
+                <div class="filter-controls">
+                    <div class="price-filter">
+                        <label for="laptopPrice">Price Range:</label>
+                        <input type="range" min="30000" max="200000" value="80000" class="price-range" id="laptopPrice">
+                        <span id="laptopPriceValue">₹80,000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <!-- More products here... Similar to the index page -->
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-secondary">View All Laptops</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Electronics Categories -->
+    <section class="more-categories">
+        <div class="container">
+            <h2 class="section-title">More Electronics Categories</h2>
+            
+            <div class="category-grid">
+                <a href="cameras.html" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Cameras</h3>
+                    <p>Capture perfect moments</p>
+                </a>
+                
+                <a href="audio.html" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <h3>Audio Devices</h3>
+                    <p>Premium sound experiences</p>
+                </a>
+                
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-tablet-alt"></i>
+                    </div>
+                    <h3>Tablets</h3>
+                    <p>Portable computing power</p>
+                </a>
+                
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Monitors</h3>
+                    <p>Crystal clear displays</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated with Deals & Reviews</h2>
+                <p>Subscribe to our newsletter for the latest tech deals, product reviews, and buying guides</p>
+                
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+                
+                <p class="privacy-note">By subscribing, you agree to our Privacy Policy. We'll never share your email with third parties.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>TechDeals<span>Hub</span></h2>
+                    <p>Your guide to smart tech purchases</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="#mobiles">Mobile Phones</a></li>
+                            <li><a href="#laptops">Laptops</a></li>
+                            <li><a href="appliances.html">Appliances</a></li>
+                            <li><a href="cameras.html">Cameras</a></li>
+                            <li><a href="audio.html">Audio Devices</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Affiliate Disclosure</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 TechDeals Hub. All rights reserved.</p>
+                <p>Amazon, the Amazon logo, and the Amazon Associate logo are trademarks of Amazon.com, Inc. or its affiliates.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/image-fetcher.js"></script>
+    <script src="js/enhanced-ui.js"></script>
+    <script src="js/background-enhancer.js"></script>
+    <script src="js/integrity-checker.js"></script>
+    <script>
+        // Price range sliders
+        const mobileRangeSlider = document.getElementById('mobilePrice');
+        const mobileRangeValue = document.getElementById('mobilePriceValue');
+        const laptopRangeSlider = document.getElementById('laptopPrice');
+        const laptopRangeValue = document.getElementById('laptopPriceValue');
+
+        // Format currency
+        function formatCurrency(value) {
+            return '₹' + parseInt(value).toLocaleString('en-IN');
+        }
+
+        // Update price display on slider change
+        if (mobileRangeSlider && mobileRangeValue) {
+            mobileRangeSlider.addEventListener('input', function() {
+                mobileRangeValue.textContent = formatCurrency(this.value);
+                filterProducts('mobiles', this.value);
+            });
+        }
+
+        if (laptopRangeSlider && laptopRangeValue) {
+            laptopRangeSlider.addEventListener('input', function() {
+                laptopRangeValue.textContent = formatCurrency(this.value);
+                filterProducts('laptops', this.value);
+            });
+        }
+
+        // Filter products by price
+        function filterProducts(sectionId, maxPrice) {
+            const section = document.getElementById(sectionId);
+            if (!section) return;
+            
+            const products = section.querySelectorAll('.product-card');
+            
+            products.forEach(product => {
+                const price = parseInt(product.dataset.price);
+                if (price <= maxPrice) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        const navList = document.querySelector('.nav-list');
+
+        if (menuToggle && navList) {
+            menuToggle.addEventListener('click', function() {
+                navList.classList.toggle('active');
+                this.classList.toggle('active');
+            });
+        }
+    </script>
+<script src="js/theme-switcher.js"></script>
+    <script src="js/image-fetcher.js"></script>
+    <script src="js/enhanced-ui.js"></script>
+    <script src="js/background-enhancer.js"></script>
+    <script src="js/integrity-checker.js"></script>
+    </body>
+</html>

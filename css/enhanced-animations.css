@@ -1,0 +1,373 @@
+/* Enhanced Animations for TechDeals Hub
+   Adds subtle motion and liveliness to the homepage */
+
+/* Floating animation for category circles */
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Gradient flowing animation */
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Subtle scale breathing animation */
+@keyframes breathe {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Apply animations to specific elements */
+.category-circle {
+    transition: all 0.3s ease;
+}
+
+.category-circle:hover {
+    transform: translateY(-15px);
+}
+
+.circle-icon {
+    animation: breathe 4s infinite ease-in-out;
+}
+
+/* Enhanced section titles with animated gradients */
+.home-theme .section-title::after {
+    background-size: 300% 300%;
+    background-image: linear-gradient(
+        90deg,
+        var(--primary-color),
+        var(--primary-dark),
+        #ff7700,
+        var(--primary-color)
+    );
+    animation: gradientFlow 6s ease infinite;
+}
+
+/* Enhance hero carousel with a pulsing glow */
+.hero-carousel::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+        circle at center,
+        rgba(255, 153, 0, 0.1) 0%,
+        rgba(255, 153, 0, 0) 50%
+    );
+    animation: pulseGlow 8s infinite ease-in-out;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes pulseGlow {
+    0% {
+        opacity: 0.5;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0.5;
+        transform: scale(0.8);
+    }
+}
+
+/* Trending cards hover effect */
+.trending-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.trending-card:hover {
+    transform: translateY(-15px) rotate(1deg);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Newsletter form enhancement */
+.newsletter-form input {
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+}
+
+.newsletter-form input:focus {
+    box-shadow: 0 0 0 3px rgba(255, 153, 0, 0.3);
+}
+
+.newsletter-form button {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.newsletter-form button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+
+.newsletter-form button:hover::before {
+    left: 100%;
+}
+
+/* Featured category cards with depth effect */
+.category-feature {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.category-feature:hover .feature-image img {
+    transform: translateZ(20px) scale(1.05);
+}
+
+.feature-overlay {
+    transform: translateZ(30px);
+    transition: transform 0.4s ease;
+}
+
+.category-feature:hover .feature-overlay {
+    transform: translateZ(40px);
+}
+
+/* Back to top button enhancement */
+#back-to-top {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#back-to-top.visible:hover {
+    transform: translateY(-10px) scale(1.1);
+    box-shadow: 0 10px 25px rgba(255, 153, 0, 0.3);
+}
+
+#back-to-top i {
+    transition: transform 0.3s ease;
+}
+
+#back-to-top:hover i {
+    transform: translateY(-3px);
+}
+
+/* Ambient aura animations */
+@keyframes ambient-shift {
+    0% {
+        opacity: 0.3;
+        transform: translate(-10%, -10%) scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: translate(0%, 0%) scale(1.1);
+    }
+    100% {
+        opacity: 0.3;
+        transform: translate(10%, 10%) scale(1);
+    }
+}
+
+.aura-glow {
+    position: relative;
+    overflow: hidden;
+}
+
+.aura-glow::before {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    top: -25%;
+    left: -25%;
+    background: radial-gradient(
+        circle at center,
+        rgba(var(--primary-rgb), 0.15) 0%, 
+        transparent 70%
+    );
+    animation: ambient-shift 15s infinite alternate ease-in-out;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Add aura to card sections */
+.featured-deals,
+.trending-products,
+.featured-categories,
+.testimonials-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-deals::before,
+.trending-products::before,
+.featured-categories::before,
+.testimonials-section::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: 
+        radial-gradient(circle at 20% 20%, rgba(var(--primary-rgb), 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(var(--primary-rgb), 0.05) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Card hover aura effect */
+.product-card:hover,
+.trending-card:hover,
+.deal-card:hover,
+.testimonial-card:hover {
+    z-index: 5;
+}
+
+.product-card:hover::before,
+.trending-card:hover::before,
+.deal-card:hover::before,
+.testimonial-card:hover::before {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    top: -10%;
+    left: -10%;
+    background: radial-gradient(
+        circle at center,
+        rgba(var(--primary-rgb), 0.15) 0%, 
+        transparent 70%
+    );
+    z-index: -1;
+    animation: card-aura-pulse 2s infinite alternate ease-in-out;
+    pointer-events: none;
+    border-radius: inherit;
+}
+
+@keyframes card-aura-pulse {
+    0% {
+        opacity: 0.5;
+        transform: scale(0.98);
+    }
+    100% {
+        opacity: 0.8;
+        transform: scale(1.02);
+    }
+}
+
+/* Enhanced page transitions */
+.theme-transition-ready * {
+    transition: none !important;
+}
+
+.page-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--body-bg);
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.page-transition.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Enhanced button hover effects */
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg, 
+        transparent 0%, 
+        rgba(255, 255, 255, 0.2) 50%, 
+        transparent 100%
+    );
+    transition: left 0.6s ease;
+    pointer-events: none;
+}
+
+.btn:hover::after {
+    left: 100%;
+}
+
+/* Section title enhanced animations */
+.section-title {
+    position: relative;
+}
+
+.section-title::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(var(--primary-rgb), 0.1);
+    z-index: -1;
+    transform: translateY(5px);
+    opacity: 0.5;
+}
+
+/* Dark mode transitions */
+html {
+    transition: background-color 0.7s ease, color 0.7s ease;
+}
+
+html * {
+    transition: 
+        background-color 0.7s ease, 
+        color 0.7s ease, 
+        border-color 0.5s ease, 
+        box-shadow 0.5s ease;
+}
+
+/* Add smooth scrolling site-wide */
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
