@@ -22,6 +22,26 @@
     z-index: 1;
 }
 
+/* Add atmospheric particle effect */
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/patterns/noise-pattern.png');
+    opacity: 0.05;
+    z-index: 1;
+    animation: subtle-movement 120s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes subtle-movement {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 100%; }
+}
+
 .hero .container {
     position: relative;
     z-index: 2;
@@ -66,6 +86,7 @@
     margin: 0 auto;
 }
 
+/* Add dimensional depth to hero content */
 .hero-content::before {
     content: '';
     position: absolute;
@@ -101,6 +122,7 @@
     overflow: visible;
 }
 
+/* Add pulsing ring effect around hero icon */
 .hero-icon::after {
     content: '';
     position: absolute;
@@ -174,6 +196,7 @@
     overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
+/* Dynamic ambient page backgrounds */
 .page-theme::before {
     content: '';
     position: fixed;
@@ -187,6 +210,7 @@
     z-index: -1;
     opacity: 0.6;
     pointer-events: none;
+    animation: ambient-movement 20s infinite alternate ease-in-out;
 }
 
 .page-theme::after {
@@ -202,6 +226,16 @@
     z-index: -1;
     opacity: 0.6;
     pointer-events: none;
+    animation: ambient-movement 25s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes ambient-movement {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(5%, 5%);
+    }
 }
 
 /* New animations for hero elements */
@@ -247,6 +281,67 @@
         opacity: 0.7;
         transform: scale(1.1);
     }
+}
+
+/* Card hover atmospheric effect */
+.product-card::before,
+.trending-card::before,
+.category-card::before,
+.blog-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    background: radial-gradient(circle at center, 
+        rgba(var(--primary-rgb), 0) 0%, 
+        rgba(var(--primary-rgb), 0) 50%);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.5s ease;
+}
+
+.product-card:hover::before,
+.trending-card:hover::before,
+.category-card:hover::before,
+.blog-card:hover::before {
+    opacity: 1;
+    background: radial-gradient(circle at center, 
+        rgba(var(--primary-rgb), 0.1) 0%, 
+        rgba(var(--primary-rgb), 0) 70%);
+    animation: card-aura-pulse 2s infinite alternate ease-in-out;
+}
+
+@keyframes card-aura-pulse {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+/* Dynamic background elements */
+.dynamic-dots {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.dot {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    opacity: 0.4;
 }
 
 /* Enhanced transitions for dark mode */
@@ -505,101 +600,6 @@
     position: absolute;
     top: 0;
     left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.2) 50%,
-        rgba(255, 255, 255, 0) 100%
-    );
-    transform: skewX(-25deg);
-    transition: all 0.75s;
-    z-index: 1;
-    pointer-events: none;
-}
-
-.product-card:hover::after {
-    left: 100%;
-}
-
-/* Logo Tap Effects */
-.logo {
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-}
-
-.logo-tap-ripple {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: rgba(255, 153, 0, 0.4);
-    animation: logoTapRipple 0.7s ease-out forwards;
-    pointer-events: none;
-}
-
-.logo-success-ripple {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    width: 120%;
-    height: 120%;
-    border-radius: 50%;
-    background: linear-gradient(135deg, rgba(255, 153, 0, 0.6), rgba(255, 97, 0, 0.6));
-    animation: logoSuccessRipple 1s ease-out forwards;
-    pointer-events: none;
-}
-
-@keyframes logoTapRipple {
-    0% {
-        transform: translate(-50%, -50%) scale(0);
-        opacity: 1;
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(3);
-        opacity: 0;
-    }
-}
-
-@keyframes logoSuccessRipple {
-    0% {
-        transform: translate(-50%, -50%) scale(0);
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.7;
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(4);
-        opacity: 0;
-    }
-}
-
-/* Ambient Background Animation */
-@keyframes ambientShift {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-.home-theme .hero-carousel::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     bottom: 0;
     background: linear-gradient(45deg, 
         rgba(255, 153, 0, 0.05) 0%, 
